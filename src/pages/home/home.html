@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     ตัดเกรด
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>ชื่อนิสิต</ion-label>
+      <ion-input type="text" [(ngModel)]  = "input1" ชื่อนิสิต = "input"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>วิชา</ion-label>
+      <ion-input type="text" [(ngModel)]  = "input2" วิชา = "input"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>คะแนน</ion-label>
+      <ion-input type="text" [(ngModel)]  = "input3" คะแนน = "input"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <p>
+    <button ion-button (click) = "showText(input1,input2,input3)">Click</button>
+  </p>
+
+</ion-content>
